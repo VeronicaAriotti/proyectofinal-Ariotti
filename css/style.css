@@ -65,9 +65,19 @@ a {
   align-items: center;
 }
 
+.p0 {
+  padding-left: 2px;
+  padding-right: 2px;
+  margin-left: 2px;
+}
+
 .img-rrss {
   width: 50px;
   height: auto;
+}
+
+.logofooter {
+  padding-left: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */
