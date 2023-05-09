@@ -274,10 +274,10 @@ header nav ul li a {
   }
 }
 .objetivoimg {
-  width: 350px;
+  width: 150px;
   height: auto;
-  padding-left: 55px;
-  margin: 25px;
+  padding-left: 0px;
+  margin: 20px;
 }
 
 .tituloNosotros {
