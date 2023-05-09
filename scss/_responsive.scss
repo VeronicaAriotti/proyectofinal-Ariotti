@@ -3,7 +3,20 @@
     .textoProductos{font-size: 20px;}
     .fs-20productos{font-size: 22px;}
     hr{color: white;}
-    
+    .gridMainNosotros{
+        display: grid;
+        grid-template-areas: 
+        "tituloNosotros tituloNosotros"
+        "textoHistoria foto"
+        "objetivoimg objetivotexto ";
+        grid-template-columns: 50% 50%;
+        grid-template-rows: repeat(4, auto);
+        .tituloNosotros{grid-area: tituloNosotros;}
+        .textoHistoria{grid-area: textoHistoria;}
+        .foto{grid-area: foto;}
+        .objetivotexto{grid-area: objetivotexto; }
+        .objetivoimg{grid-area: objetivoimg;}
+    }
    
 }
 
@@ -13,6 +26,11 @@
     li{font-size: 15px;}
     .textoProductos{font-size: 15px;}
     .logos{ width: 75px; height: 75px;}
-    .logofooter{ width: 65px;height: 65px;}
+    .logofooter{ width: 95px; height: 95px;}
     hr{color: crimson;}
+    .nav{
+        display: flex;
+        flex-direction: column;
+    }
+  
 }
