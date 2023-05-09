@@ -1,5 +1,5 @@
 .bg-hf {
-  background-image: linear-gradient(to right, rgb(119, 119, 119), transparent);
+  background-image: linear-gradient(to right, #789090, #787878);
 }
 
 .logos {
@@ -42,12 +42,14 @@ main {
   text-align: center;
   text-size-adjust: 200px;
   font-size: 80px;
+  color: #a8c090;
 }
 
 .fontVAP {
   font-family: "Handlee", cursive;
   font-size: auto;
   font-weight: bold;
+  color: #f0d8a8;
 }
 
 a {
@@ -60,6 +62,7 @@ a {
 
 .fs-20 {
   font-size: 25px;
+  color: #f0d8a8;
 }
 
 .cards {
@@ -139,11 +142,12 @@ footer {
   text-align: center;
   font-family: "Handlee", cursive;
   padding-top: 65px;
+  background-image: radial-gradient(#f0d8a8, transparent);
 }
 
 .colortip {
   color: crimson;
-  font-size: 35px;
+  font-size: 25px;
   font-family: "Handlee", cursive;
   font-weight: bolder;
 }
@@ -154,7 +158,7 @@ footer {
 }
 
 .textsubtitle {
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .tipcore {
@@ -163,7 +167,7 @@ footer {
 }
 
 .bg-tip {
-  background-image: linear-gradient(to top, #b6d1b9, transparent);
+  background-image: linear-gradient(to top, #f0d8a8, transparent);
 }
 
 /*# sourceMappingURL=style.css.map */
