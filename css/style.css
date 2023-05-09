@@ -77,6 +77,45 @@ a {
   height: "10px";
 }
 
+@media only screen and (min-width: 1023px) {
+  .fs-70 {
+    font-size: 80px;
+  }
+  .textoProductos {
+    font-size: 25px;
+  }
+  .fs-20productos {
+    font-size: 22px;
+  }
+  hr {
+    color: white;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .fs-70 {
+    font-size: 40px;
+  }
+  a {
+    font-size: 15px;
+  }
+  li {
+    font-size: 15px;
+  }
+  .textoProductos {
+    font-size: 15px;
+  }
+  .logos {
+    width: 75px;
+    height: 75px;
+  }
+  .logofooter {
+    width: 65px;
+    height: 65px;
+  }
+  hr {
+    color: crimson;
+  }
+}
 .img-rrss {
   width: 50px;
   height: auto;
@@ -99,6 +138,11 @@ footer {
 .textoProductos {
   text-align: center;
   font-family: "Handlee", cursive;
+  padding-top: 65px;
+}
+
+.colortip {
+  color: crimson;
 }
 
 /*# sourceMappingURL=style.css.map */
