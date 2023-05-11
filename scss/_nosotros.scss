@@ -1,0 +1,54 @@
+body{margin: 0px
+}   
+.foto{
+    display: flex;
+        width: 256px;
+        height: auto;
+        justify-content: center;
+        border-radius: 10px;
+        width: 100%;
+        height: auto;
+        padding-left: 5ps;
+            
+}
+.objetivoimg{
+    width: 250px;
+    height: auto;
+    padding-left: 50pxs;
+    justify-content: center;
+    padding-top: 50px;
+}
+.tituloNosotros{
+    text-align: center;
+    color:  rgb(228, 21, 6);
+    font-size: 30px;
+
+}
+.textoHistoria  {
+    font-family: "Handlee", cursive;
+    font-weight: bolder;
+    color: rgb(35, 35, 35) ;
+    text-align: center;   
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+
+}
+.objetivotexto{ 
+    font-family: "Handlee", cursive;
+    font-weight: bolder;
+    color: rgb(35, 35, 35) ;
+    text-align: center;   
+    padding-top: 50px;
+    padding-left: 100px;
+    margin-right: 100px;
+}
+.fs-historiaNosotros{
+    font-size: 35px;
+    color: #930f0f;
+    font-family: "Handlee", cursive;}
+.p-nosotros{
+   font-family: "Handlee", cursive;
+   font-size: 25px ;
+
+}

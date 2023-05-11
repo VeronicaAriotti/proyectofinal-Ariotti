@@ -1,0 +1,161 @@
+@media only screen and (min-width: 1023px){
+    .fs-70 {font-size: 80px;}
+    .textoProductos{font-size: 20px;}
+    .fs-20productos{font-size: 22px;}
+    hr{color: white;}
+    .logos{width: 150px;height: 150px;}
+    .logo{width: 150px;height: 150px;}
+    .logoh{ width: 150px;height: 150px;}
+    .logofooter{ padding-left: 15px; width: 160px; height: 160px;}
+    .gridMainNosotros{
+    display: grid;
+    grid-template-areas: 
+    "tituloNosotros tituloNosotros tituloNosotros"
+    "textoHistoria blanco foto"
+    "objetivoimg blanco objetivotexto ";
+    grid-template-columns: 45% 10% 45%;
+    grid-template-rows: repeat(3, auto);
+    .tituloNosotros{grid-area: tituloNosotros;}
+    .textoHistoria{grid-area: textoHistoria;}
+    .foto{grid-area: foto;}
+    .objetivotexto{grid-area: objetivotexto; padding-right: 100px;  }
+    .objetivoimg{grid-area: objetivoimg; padding-left: 50px;}
+    .blanco{grid-area: blanco;}
+}
+    .foto{
+        width: 256px;
+        height: auto;
+        
+    }   
+
+.gridMainContactos{
+    display: grid;
+    grid-template-areas: 
+    "titulocontactos titulocontactos titulocontactos"
+    "formulario mapa contacto ";
+    .titulocontactos{grid-area: titulocontactos;}
+    .formulario{grid-area: formulario;}
+    .contacto{grid-area: contacto;}
+    .mapa{grid-area: mapa}
+    grid-template-columns: 40% 30% 30%;
+    grid-template-rows:repeat (2 auto);
+}
+.mapa{
+    padding-top: 60px;
+}
+header{
+    background-image: linear-gradient( to right, #789090, #787878 );
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    
+    nav{
+        padding: 10px;
+        margin-top: 15px;
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            li{
+                padding: 10px;
+                font-size: 40px;
+                a{
+                    color: #f0d8a8;
+                    font-size: 25px;
+                    transition: all 1s;
+                    &:hover{
+                        color:#242424;
+                                              
+                    }
+                }      
+            }
+        
+        }
+        
+    }
+}
+}
+    
+   
+
+
+@media only screen and (max-width:768px){
+    .fs-70{font-size: 40px}
+    a{font-size: 20px;}
+    li{font-size: 15px;}
+    .textoProductos{font-size: 15px;}
+    hr{color: crimson;}
+    .nav{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .logo{width: 100px;height: 100px;padding-top: 5px; padding-left: 75px;
+        padding-bottom: 20px;}
+    .logoh{width: 100px;height: 100px;padding-top: 5px;}
+    
+    .grid{
+        display: grid;
+        grid-template-columns: 100%
+    }
+    .gridMainNosotros{
+        display: grid;
+        grid-template-columns: 100% ;
+        grid-template-rows: repeat(3,auto);
+
+    }
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-around;
+        font-family : "Handlee", cursive;
+        padding: 8px;
+        padding-top: 10px;
+    }
+    
+    .ptop20{
+        padding-top: 8px;
+
+    }
+    .gridMainContactos{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(3,auto);
+
+}   
+    header{
+        background-image: linear-gradient( to right, #789090, #787878 );
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items:center;      
+        nav{
+            
+            margin-top: 5px;
+            ul{
+                display: flex;
+                flex-wrap: wrap;
+                li{
+                    padding: 5px;
+                    font-size: 20px;
+                    a{
+                        color: #f0d8a8;
+                        font-size: 20px;
+                        transition: all 1s;
+                        &:hover{
+                            color:#242424;
+                                                  
+                        }
+                    }      
+                }
+            
+            }
+            
+        }
+    }
+    .mapa{padding-left: 30px; padding-bottom: 10px;}
+    .rrss{
+        align-items: center;
+        display: flex;
+    }
+}

@@ -1,7 +1,44 @@
 .img-rrss {
     width: 50px;
     height: auto;
+    
   }
-  .logofooter{
-    padding-left: 5px;
+
+  .mail{
+    font-weight: bold;
+    color: rgb(49, 48, 45);
   }
+  footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: "Handlee", cursive;
+    padding: 8px;
+  }
+  .h4footer{
+    font-family: "Handlee", cursive;
+    font-size: 25px;
+    margin: 15px;
+    color:  #930f0f;
+  }
+  footer{
+    .contactos{
+      li{
+        a{
+            width: "10px";
+            height:"10px";
+            color:  rgb(49, 48, 45);
+            transition: all 0s;
+            &:hover{
+                color:brown;
+            }
+            
+          }
+        }
+        
+      }
+
+    }
+    
+  
+  

@@ -1,10 +1,5 @@
 .bg-hf {
-  background-image: linear-gradient(to right, dimgray, transparent);
-}
-
-.logos {
-  width: 150px;
-  height: 150px;
+  background-image: linear-gradient(to right, #789090, #787878);
 }
 
 li {
@@ -27,7 +22,7 @@ main {
 }
 
 .ptop20 {
-  padding-top: 20px;
+  padding-top: 30px;
 }
 
 .pb20 {
@@ -42,23 +37,27 @@ main {
   text-align: center;
   text-size-adjust: 200px;
   font-size: 80px;
+  color: #a8c090;
 }
 
 .fontVAP {
   font-family: "Handlee", cursive;
   font-size: auto;
   font-weight: bold;
+  color: #930f0f;
 }
 
 a {
   text-decoration-style: none;
   color: rgb(49, 48, 45);
-  font-size: medium;
+  font-size: auto;
   font-weight: bold;
+  text-decoration: none;
 }
 
 .fs-20 {
-  font-size: 20px;
+  font-size: 25px;
+  color: #f0d8a8;
 }
 
 .cards {
@@ -71,13 +70,415 @@ a {
   margin-left: 2px;
 }
 
+.img-fluid {
+  width: 100%;
+  height: auto;
+}
+
+@media only screen and (min-width: 1023px) {
+  .fs-70 {
+    font-size: 80px;
+  }
+  .textoProductos {
+    font-size: 20px;
+  }
+  .fs-20productos {
+    font-size: 22px;
+  }
+  hr {
+    color: white;
+  }
+  .logos {
+    width: 150px;
+    height: 150px;
+  }
+  .logo {
+    width: 150px;
+    height: 150px;
+  }
+  .logoh {
+    width: 150px;
+    height: 150px;
+  }
+  .logofooter {
+    padding-left: 15px;
+    width: 160px;
+    height: 160px;
+  }
+  .gridMainNosotros {
+    display: grid;
+    grid-template-areas: "tituloNosotros tituloNosotros tituloNosotros" "textoHistoria blanco foto" "objetivoimg blanco objetivotexto ";
+    grid-template-columns: 45% 10% 45%;
+    grid-template-rows: repeat(3, auto);
+  }
+  .gridMainNosotros .tituloNosotros {
+    grid-area: tituloNosotros;
+  }
+  .gridMainNosotros .textoHistoria {
+    grid-area: textoHistoria;
+  }
+  .gridMainNosotros .foto {
+    grid-area: foto;
+  }
+  .gridMainNosotros .objetivotexto {
+    grid-area: objetivotexto;
+    padding-right: 100px;
+  }
+  .gridMainNosotros .objetivoimg {
+    grid-area: objetivoimg;
+    padding-left: 50px;
+  }
+  .gridMainNosotros .blanco {
+    grid-area: blanco;
+  }
+  .foto {
+    width: 256px;
+    height: auto;
+  }
+  .gridMainContactos {
+    display: grid;
+    grid-template-areas: "titulocontactos titulocontactos titulocontactos" "formulario mapa contacto ";
+    grid-template-columns: 40% 30% 30%;
+    grid-template-rows: repeat 2 auto;
+  }
+  .gridMainContactos .titulocontactos {
+    grid-area: titulocontactos;
+  }
+  .gridMainContactos .formulario {
+    grid-area: formulario;
+  }
+  .gridMainContactos .contacto {
+    grid-area: contacto;
+  }
+  .gridMainContactos .mapa {
+    grid-area: mapa;
+  }
+  .mapa {
+    padding-top: 60px;
+  }
+  header {
+    background-image: linear-gradient(to right, #789090, #787878);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  header nav {
+    padding: 10px;
+    margin-top: 15px;
+  }
+  header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  header nav ul li {
+    padding: 10px;
+    font-size: 40px;
+  }
+  header nav ul li a {
+    color: #f0d8a8;
+    font-size: 25px;
+    transition: all 1s;
+  }
+  header nav ul li a:hover {
+    color: #242424;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .fs-70 {
+    font-size: 40px;
+  }
+  a {
+    font-size: 20px;
+  }
+  li {
+    font-size: 15px;
+  }
+  .textoProductos {
+    font-size: 15px;
+  }
+  .logo {
+    width: 75px;
+    height: 75px;
+  }
+  .logofooter {
+    width: 95px;
+    height: 95px;
+  }
+  hr {
+    color: crimson;
+  }
+  .nav {
+    display: flex;
+    flex-direction: column;
+  }
+  .logo {
+    width: 100px;
+    height: 100px;
+    padding-top: 5px;
+    padding-left: 75px;
+    padding-bottom: 20px;
+  }
+  .logoh {
+    width: 100px;
+    height: 100px;
+    padding-top: 5px;
+  }
+  .logofooter {
+    padding-left: 15px;
+    width: 100px;
+    height: 100px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  .gridMainNosotros {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, auto);
+  }
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-family: "Handlee", cursive;
+    padding: 8px;
+    padding-top: 10px;
+  }
+  .ptop20 {
+    padding-top: 8px;
+  }
+  .gridMainContactos {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, auto);
+  }
+  header {
+    background-image: linear-gradient(to right, #789090, #787878);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header nav {
+    margin-top: 5px;
+  }
+  header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  header nav ul li {
+    padding: 5px;
+    font-size: 20px;
+  }
+  header nav ul li a {
+    color: #f0d8a8;
+    font-size: 20px;
+    transition: all 1s;
+  }
+  header nav ul li a:hover {
+    color: #242424;
+  }
+  .mapa {
+    padding-left: 30px;
+    padding-bottom: 10px;
+  }
+  .rrss {
+    align-items: center;
+    display: flex;
+  }
+}
 .img-rrss {
   width: 50px;
   height: auto;
 }
 
-.logofooter {
-  padding-left: 5px;
+.mail {
+  font-weight: bold;
+  color: rgb(49, 48, 45);
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-family: "Handlee", cursive;
+  padding: 8px;
+}
+
+.h4footer {
+  font-family: "Handlee", cursive;
+  font-size: 25px;
+  margin: 15px;
+  color: #930f0f;
+}
+
+footer .contactos li a {
+  width: "10px";
+  height: "10px";
+  color: rgb(49, 48, 45);
+  transition: all 0s;
+}
+footer .contactos li a:hover {
+  color: brown;
+}
+
+.textoProductos {
+  text-align: center;
+  font-family: "Handlee", cursive;
+  padding-top: 65px;
+  background-image: radial-gradient(#f0d8a8, transparent);
+}
+
+.colortip {
+  color: crimson;
+  font-size: 25px;
+  font-family: "Handlee", cursive;
+  font-weight: bolder;
+}
+
+.tiplinks {
+  color: blue;
+  font-size: larger;
+}
+
+.textsubtitle {
+  font-size: 20px;
+}
+
+.tipcore {
+  font-size: 20px;
+  font-family: "Handlee", cursive;
+}
+
+.bg-tip {
+  background-image: linear-gradient(to top, #f0d8a8, transparent);
+}
+
+body {
+  margin: 0px;
+}
+
+.foto {
+  display: flex;
+  width: 256px;
+  height: auto;
+  justify-content: center;
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+  padding-left: 5ps;
+}
+
+.objetivoimg {
+  width: 250px;
+  height: auto;
+  padding-left: 50pxs;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.tituloNosotros {
+  text-align: center;
+  color: rgb(228, 21, 6);
+  font-size: 30px;
+}
+
+.textoHistoria {
+  font-family: "Handlee", cursive;
+  font-weight: bolder;
+  color: rgb(35, 35, 35);
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+}
+
+.objetivotexto {
+  font-family: "Handlee", cursive;
+  font-weight: bolder;
+  color: rgb(35, 35, 35);
+  text-align: center;
+  padding-top: 50px;
+  padding-left: 100px;
+  margin-right: 100px;
+}
+
+.fs-historiaNosotros {
+  font-size: 35px;
+  color: #930f0f;
+  font-family: "Handlee", cursive;
+}
+
+.p-nosotros {
+  font-family: "Handlee", cursive;
+  font-size: 25px;
+}
+
+.titulocontactos {
+  text-align: center;
+  color: rgb(228, 21, 6);
+  font-size: 30px;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  background-color: rgb(216, 222, 221);
+  height: 550px;
+  width: 350px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  margin: auto;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-family: "Handlee", cursive;
+  font-size: 20px;
+  font-weight: bold;
+}
+.formulario .box {
+  border: 0;
+  background-color: #f4f4fd;
+  padding: 15px;
+  border-radius: 25px;
+  margin-bottom: 25px;
+  outline: none;
+}
+.formulario .submit {
+  border-radius: 25px;
+  background-color: rgb(106, 83, 169);
+  padding: 15px;
+  border: 0;
+  color: #f4f4fd;
+  margin-top: 15px;
+  width: 350px;
+  box-shadow: 0 0 20px rgb(130, 130, 130);
+}
+
+.mapa {
+  margin-top: 40px;
+  border-radius: 25px;
+}
+
+.contacto {
+  margin-top: 60px;
+  font: 25px;
+  font-family: "Handlee", cursive;
+  font-weight: bold;
+  padding: 15px;
+}
+.contacto .li a {
+  color: rgb(49, 48, 45);
+  transition: all 2s;
+}
+.contacto .li a:hover {
+  color: brown;
+}
+
+li {
+  padding: 15px;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=style.css.map */
