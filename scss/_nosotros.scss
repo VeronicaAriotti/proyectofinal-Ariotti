@@ -30,8 +30,7 @@ header{
     }
 }
 .logo{width: 150px;height: 150px;}
-body{margin: 0px;}
-    
+body{margin: 0px;}   
 
 .grid{
     display: grid;
@@ -46,13 +45,16 @@ body{margin: 0px;}
         border-radius: 10px;
         width: 100%;
         height: auto;
-    
+        padding-left: 5ps;
+            
     }
+
 .objetivoimg{
     width: 250px;
     height: auto;
-    
+    padding-left: 50pxs;
     justify-content: center;
+    padding-top: 50px;
 }
 .tituloNosotros{
     text-align: center;
@@ -65,7 +67,9 @@ body{margin: 0px;}
     font-weight: bolder;
     color: rgb(35, 35, 35) ;
     text-align: center;   
-    padding: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
 
 }
 .objetivotexto{ 
@@ -74,4 +78,15 @@ body{margin: 0px;}
     color: rgb(35, 35, 35) ;
     text-align: center;   
     padding-top: 50px;
+    padding-left: 100px;
+    margin-right: 100px;
+}
+.fs-historiaNosotros{
+    font-size: 35px;
+    color: #930f0f;
+    font-family: "Handlee", cursive;}
+.p-nosotros{
+   font-family: "Handlee", cursive;
+   font-size: 25px ;
+
 }

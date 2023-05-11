@@ -10,14 +10,13 @@
     "tituloNosotros tituloNosotros tituloNosotros"
     "textoHistoria blanco foto"
     "objetivoimg blanco objetivotexto ";
-    grid-template-columns: 40% 20% 40%;
+    grid-template-columns: 45% 10% 45%;
     grid-template-rows: repeat(3, auto);
     .tituloNosotros{grid-area: tituloNosotros;}
     .textoHistoria{grid-area: textoHistoria;}
     .foto{grid-area: foto;}
-    .objetivotexto{grid-area: objetivotexto; padding-right: 30px; }
-    .objetivoimg{grid-area: objetivoimg;
-    padding-left: 30px;}
+    .objetivotexto{grid-area: objetivotexto; padding-right: 100px;  }
+    .objetivoimg{grid-area: objetivoimg; padding-left: 50px;}
     .blanco{grid-area: blanco;}
 }
 
@@ -70,8 +69,41 @@
         grid-template-rows: repeat(3,auto);
 
     }
-    
-    
-    
-  
-}
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-around;
+        font-family : "Handlee", cursive;
+        padding: 8px;
+    }
+    header{
+        background-image: linear-gradient( to right, #789090, #787878 );
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+              
+        nav{
+            
+            margin-top: 5px;
+            ul{
+                display: flex;
+                flex-wrap: wrap;
+                li{
+                    padding: 5px;
+                    font-size: 20px;
+                    a{
+                        color: #f0d8a8;
+                        font-size: 15px;
+                        transition: all 1s;
+                        &:hover{
+                            color:#242424;
+                                                  
+                        }
+                    }      
+                }
+            
+            }
+            
+        }
+    }
+    }

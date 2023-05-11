@@ -1,6 +1,7 @@
 .img-rrss {
     width: 50px;
     height: auto;
+    justify-content: end;
   }
   .logofooter{
     padding-left: 15px;
@@ -9,7 +10,17 @@
   }
   .mail{
     font-weight: bold;
+    color: rgb(49, 48, 45);
   }
   footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     font-family: "Handlee", cursive;
+    padding: 8px;
+  }
+  .h4footer{
+    font-family: "Handlee", cursive;
+    font-size: 25px;
+    margin: 15px;
   }

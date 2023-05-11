@@ -65,12 +65,6 @@ a {
   color: #f0d8a8;
 }
 
-.fs-historiaNosotros {
-  font-size: 25px;
-  color: #787878;
-  font-family: "Handlee", cursive;
-}
-
 .cards {
   align-items: center;
 }
@@ -107,7 +101,7 @@ a {
   .gridMainNosotros {
     display: grid;
     grid-template-areas: "tituloNosotros tituloNosotros tituloNosotros" "textoHistoria blanco foto" "objetivoimg blanco objetivotexto ";
-    grid-template-columns: 40% 20% 40%;
+    grid-template-columns: 45% 10% 45%;
     grid-template-rows: repeat(3, auto);
   }
   .gridMainNosotros .tituloNosotros {
@@ -121,11 +115,11 @@ a {
   }
   .gridMainNosotros .objetivotexto {
     grid-area: objetivotexto;
-    padding-right: 30px;
+    padding-right: 100px;
   }
   .gridMainNosotros .objetivoimg {
     grid-area: objetivoimg;
-    padding-left: 30px;
+    padding-left: 50px;
   }
   .gridMainNosotros .blanco {
     grid-area: blanco;
@@ -194,10 +188,43 @@ a {
     grid-template-columns: 100%;
     grid-template-rows: repeat(3, auto);
   }
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-family: "Handlee", cursive;
+    padding: 8px;
+  }
+  header {
+    background-image: linear-gradient(to right, #789090, #787878);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  header nav {
+    margin-top: 5px;
+  }
+  header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  header nav ul li {
+    padding: 5px;
+    font-size: 20px;
+  }
+  header nav ul li a {
+    color: #f0d8a8;
+    font-size: 15px;
+    transition: all 1s;
+  }
+  header nav ul li a:hover {
+    color: #242424;
+  }
 }
 .img-rrss {
   width: 50px;
   height: auto;
+  justify-content: end;
 }
 
 .logofooter {
@@ -208,10 +235,21 @@ a {
 
 .mail {
   font-weight: bold;
+  color: rgb(49, 48, 45);
 }
 
 footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   font-family: "Handlee", cursive;
+  padding: 8px;
+}
+
+.h4footer {
+  font-family: "Handlee", cursive;
+  font-size: 25px;
+  margin: 15px;
 }
 
 .textoProductos {
@@ -296,12 +334,15 @@ body {
   border-radius: 10px;
   width: 100%;
   height: auto;
+  padding-left: 5ps;
 }
 
 .objetivoimg {
   width: 250px;
   height: auto;
+  padding-left: 50pxs;
   justify-content: center;
+  padding-top: 50px;
 }
 
 .tituloNosotros {
@@ -315,7 +356,9 @@ body {
   font-weight: bolder;
   color: rgb(35, 35, 35);
   text-align: center;
-  padding: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
 }
 
 .objetivotexto {
@@ -324,6 +367,19 @@ body {
   color: rgb(35, 35, 35);
   text-align: center;
   padding-top: 50px;
+  padding-left: 100px;
+  margin-right: 100px;
+}
+
+.fs-historiaNosotros {
+  font-size: 35px;
+  color: #930f0f;
+  font-family: "Handlee", cursive;
+}
+
+.p-nosotros {
+  font-family: "Handlee", cursive;
+  font-size: 25px;
 }
 
 /*# sourceMappingURL=style.css.map */
