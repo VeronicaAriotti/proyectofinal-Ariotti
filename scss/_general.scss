@@ -44,7 +44,7 @@
     font-family: "Handlee", cursive;
     font-size: auto;
     font-weight: bold;
-    color: #f0d8a8;
+    color:  #930f0f;
   }
   a {
     text-decoration-style: none;
@@ -68,6 +68,11 @@
   .contactosfooter{
     width: "10px";
     height:"10px";
+    color:  rgb(49, 48, 45);
+    transition: all 1s;
+    &:hover{
+        color:brown;
+    }
     
   }
   .img-fluid{

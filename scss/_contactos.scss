@@ -1,0 +1,79 @@
+.gridMainContactos{
+    display: grid;
+    grid-template-areas: 
+    "titulocontactos titulocontactos titulocontactos"
+    "formulario mapa contacto ";
+    .titulocontactos{grid-area: titulocontactos;}
+    .formulario{grid-area: formulario;}
+    .contacto{grid-area: contacto;}
+    .mapa{grid-area: mapa}
+    grid-template-columns: 40% 30% 30%;
+    grid-template-rows:repeat (2 auto);
+}
+.titulocontactos{
+    text-align: center;
+    color:  rgb(228, 21, 6);
+    font-size: 30px;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color: rgb(216, 222, 221);
+    height: 550px;
+    width: 350px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4 );
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-family: "Handlee", cursive;
+    font-size: 20px;
+    font-weight: bold;
+    .box{
+        border: 0;
+        background-color: #f4f4fd;
+        padding: 15px;
+        border-radius: 25px;
+        margin-bottom: 25px;
+        outline: none;
+    
+    }
+    .submit{
+        border-radius: 25px;
+        background-color: rgb(106, 83, 169);
+        padding: 15px;
+        border: 0;
+        color:#f4f4fd;
+        margin-top: 15px;
+        width: 350px;
+        box-shadow: 0 0 20px  rgb(130, 130, 130); 
+
+    }
+}
+.mapa{
+    margin-top: 40px;
+    border-radius: 25px;  
+}
+.contacto{
+    margin-top: 50px;
+    font: 25px; 
+    font-family: "Handlee", cursive; 
+    font-weight: bold;
+    padding: 15px;
+    .li{
+        a{
+            color:  rgb(49, 48, 45);
+            transition: all 1s;
+            &:hover{
+            color: brown;
+
+        }
+        
+
+        }
+    }
+    }
+li{
+    padding: 15px;
+    font-weight: bold;
+}
