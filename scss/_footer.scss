@@ -3,11 +3,7 @@
     height: auto;
     justify-content: end;
   }
-  .logofooter{
-    padding-left: 15px;
-    width: 170px;
-    height: 170px;
-  }
+
   .mail{
     font-weight: bold;
     color: rgb(49, 48, 45);
@@ -25,3 +21,24 @@
     margin: 15px;
     color:  #930f0f;
   }
+  footer{
+    .contactos{
+      li{
+        a{
+            width: "10px";
+            height:"10px";
+            color:  rgb(49, 48, 45);
+            transition: all 0s;
+            &:hover{
+                color:brown;
+            }
+            
+          }
+        }
+        
+      }
+
+    }
+    
+  
+  

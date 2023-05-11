@@ -3,7 +3,15 @@
     .textoProductos{font-size: 20px;}
     .fs-20productos{font-size: 22px;}
     hr{color: white;}
-
+    .logos{
+        width: 150px;
+        height: 150px;
+    }
+    .logo{
+        width: 150px;
+        height: 150px;
+    }
+    .logofooter{ padding-left: 15px; width: 160px; height: 160px;}
     .gridMainNosotros{
     display: grid;
     grid-template-areas: 
@@ -24,8 +32,54 @@
         width: 256px;
         height: auto;
         
-     }   
+    }   
 
+.gridMainContactos{
+    display: grid;
+    grid-template-areas: 
+    "titulocontactos titulocontactos titulocontactos"
+    "formulario mapa contacto ";
+    .titulocontactos{grid-area: titulocontactos;}
+    .formulario{grid-area: formulario;}
+    .contacto{grid-area: contacto;}
+    .mapa{grid-area: mapa}
+    grid-template-columns: 40% 30% 30%;
+    grid-template-rows:repeat (2 auto);
+}
+.mapa{
+    padding-top: 60px;
+}
+header{
+    background-image: linear-gradient( to right, #789090, #787878 );
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    
+    nav{
+        padding: 10px;
+        margin-top: 15px;
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            li{
+                padding: 10px;
+                font-size: 40px;
+                a{
+                    color: #f0d8a8;
+                    font-size: 25px;
+                    transition: all 1s;
+                    &:hover{
+                        color:#242424;
+                                              
+                    }
+                }      
+            }
+        
+        }
+        
+    }
+}
 }
     
    
@@ -33,34 +87,18 @@
 
 @media only screen and (max-width:768px){
     .fs-70{font-size: 40px}
-    a{font-size: 15px;}
+    a{font-size: 20px;}
     li{font-size: 15px;}
     .textoProductos{font-size: 15px;}
-    .logos{ width: 75px; height: 75px;}
+    .logo{ width: 75px; height: 75px;}
     .logofooter{ width: 95px; height: 95px;}
     hr{color: crimson;}
     .nav{
         display: flex;
         flex-direction: column;
     }
-    header{
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        padding: 0%;
-        nav{
-            padding:0%;
-            margin-top: 0%;
-            ul{
-                display:flex;
-                li{
-                    padding: 10px;
-                    font-size: 15px;
-                }
-            }
-        }
-    }
-    .logo{width: 100px;height: 100px;padding-top: 5px;}
+     .logo{width: 100px;height: 100px;padding-top: 5px; padding-left: 20px;}
+    .logofooter{ padding-left: 15px; width: 100px; height: 100px;}
     .grid{
         display: grid;
         grid-template-columns: 100%
@@ -79,17 +117,23 @@
         padding: 8px;
         padding-top: 10px;
     }
+    
     .ptop20{
         padding-top: 8px;
 
     }
-        
+    .gridMainContactos{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(3,auto);
+
+}   
     header{
         background-image: linear-gradient( to right, #789090, #787878 );
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-              
+        align-items:center;      
         nav{
             
             margin-top: 5px;
@@ -101,7 +145,7 @@
                     font-size: 20px;
                     a{
                         color: #f0d8a8;
-                        font-size: 15px;
+                        font-size: 20px;
                         transition: all 1s;
                         &:hover{
                             color:#242424;
@@ -114,10 +158,5 @@
             
         }
     }
-    .gridMainContactos{
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: repeat(2,auto);
-
-}
+    .mapa{padding-left: 15px}
 }

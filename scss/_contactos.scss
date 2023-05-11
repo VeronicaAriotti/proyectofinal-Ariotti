@@ -1,15 +1,4 @@
-.gridMainContactos{
-    display: grid;
-    grid-template-areas: 
-    "titulocontactos titulocontactos titulocontactos"
-    "formulario mapa contacto ";
-    .titulocontactos{grid-area: titulocontactos;}
-    .formulario{grid-area: formulario;}
-    .contacto{grid-area: contacto;}
-    .mapa{grid-area: mapa}
-    grid-template-columns: 40% 30% 30%;
-    grid-template-rows:repeat (2 auto);
-}
+
 .titulocontactos{
     text-align: center;
     color:  rgb(228, 21, 6);
@@ -55,7 +44,7 @@
     border-radius: 25px;  
 }
 .contacto{
-    margin-top: 50px;
+    margin-top: 60px;
     font: 25px; 
     font-family: "Handlee", cursive; 
     font-weight: bold;
@@ -63,14 +52,12 @@
     .li{
         a{
             color:  rgb(49, 48, 45);
-            transition: all 1s;
+            transition: all 2s;
             &:hover{
             color: brown;
 
         }
-        
-
-        }
+      }
     }
     }
 li{
