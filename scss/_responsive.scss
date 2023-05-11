@@ -3,14 +3,9 @@
     .textoProductos{font-size: 20px;}
     .fs-20productos{font-size: 22px;}
     hr{color: white;}
-    .logos{
-        width: 150px;
-        height: 150px;
-    }
-    .logo{
-        width: 150px;
-        height: 150px;
-    }
+    .logos{width: 150px;height: 150px;}
+    .logo{width: 150px;height: 150px;}
+    .logoh{ width: 150px;height: 150px;}
     .logofooter{ padding-left: 15px; width: 160px; height: 160px;}
     .gridMainNosotros{
     display: grid;
@@ -26,8 +21,7 @@
     .objetivotexto{grid-area: objetivotexto; padding-right: 100px;  }
     .objetivoimg{grid-area: objetivoimg; padding-left: 50px;}
     .blanco{grid-area: blanco;}
- }
-
+}
     .foto{
         width: 256px;
         height: auto;
@@ -97,7 +91,9 @@ header{
         display: flex;
         flex-direction: column;
     }
-     .logo{width: 100px;height: 100px;padding-top: 5px; padding-left: 20px;}
+     .logo{width: 100px;height: 100px;padding-top: 5px; padding-left: 75px;
+        padding-bottom: 20px;}
+     .logoh{width: 100px;height: 100px;padding-top: 5px;}
     .logofooter{ padding-left: 15px; width: 100px; height: 100px;}
     .grid{
         display: grid;
@@ -158,5 +154,9 @@ header{
             
         }
     }
-    .mapa{padding-left: 15px}
+    .mapa{padding-left: 30px; padding-bottom: 10px;}
+    .rrss{
+        align-items: center;
+        display: flex;
+    }
 }

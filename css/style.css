@@ -96,6 +96,10 @@ a {
     width: 150px;
     height: 150px;
   }
+  .logoh {
+    width: 150px;
+    height: 150px;
+  }
   .logofooter {
     padding-left: 15px;
     width: 160px;
@@ -212,7 +216,13 @@ a {
     width: 100px;
     height: 100px;
     padding-top: 5px;
-    padding-left: 20px;
+    padding-left: 75px;
+    padding-bottom: 20px;
+  }
+  .logoh {
+    width: 100px;
+    height: 100px;
+    padding-top: 5px;
   }
   .logofooter {
     padding-left: 15px;
@@ -271,13 +281,17 @@ a {
     color: #242424;
   }
   .mapa {
-    padding-left: 15px;
+    padding-left: 30px;
+    padding-bottom: 10px;
+  }
+  .rrss {
+    align-items: center;
+    display: flex;
   }
 }
 .img-rrss {
   width: 50px;
   height: auto;
-  justify-content: end;
 }
 
 .mail {
@@ -347,6 +361,7 @@ body {
 }
 
 .foto {
+  display: flex;
   width: 256px;
   height: auto;
   justify-content: center;
