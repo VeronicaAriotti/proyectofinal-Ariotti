@@ -65,6 +65,12 @@ a {
   color: #f0d8a8;
 }
 
+.fs-historiaNosotros {
+  font-size: 25px;
+  color: #787878;
+  font-family: "Handlee", cursive;
+}
+
 .cards {
   align-items: center;
 }
@@ -100,9 +106,9 @@ a {
   }
   .gridMainNosotros {
     display: grid;
-    grid-template-areas: "tituloNosotros tituloNosotros" "textoHistoria foto" "objetivoimg objetivotexto ";
-    grid-template-columns: 50% 50%;
-    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "tituloNosotros tituloNosotros tituloNosotros" "textoHistoria blanco foto" "objetivoimg blanco objetivotexto ";
+    grid-template-columns: 40% 20% 40%;
+    grid-template-rows: repeat(3, auto);
   }
   .gridMainNosotros .tituloNosotros {
     grid-area: tituloNosotros;
@@ -115,9 +121,18 @@ a {
   }
   .gridMainNosotros .objetivotexto {
     grid-area: objetivotexto;
+    padding-right: 30px;
   }
   .gridMainNosotros .objetivoimg {
     grid-area: objetivoimg;
+    padding-left: 30px;
+  }
+  .gridMainNosotros .blanco {
+    grid-area: blanco;
+  }
+  .foto {
+    width: 256px;
+    height: auto;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -147,6 +162,37 @@ a {
   .nav {
     display: flex;
     flex-direction: column;
+  }
+  header {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0%;
+  }
+  header nav {
+    padding: 0%;
+    margin-top: 0%;
+  }
+  header nav ul {
+    display: flex;
+  }
+  header nav ul li {
+    padding: 10px;
+    font-size: 15px;
+  }
+  .logo {
+    width: 100px;
+    height: 100px;
+    padding-top: 5px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  .gridMainNosotros {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, auto);
   }
 }
 .img-rrss {
@@ -222,7 +268,10 @@ header nav ul li {
 header nav ul li a {
   color: #f0d8a8;
   font-size: 25px;
-  transition: all 2s;
+  transition: all 1s;
+}
+header nav ul li a:hover {
+  color: #242424;
 }
 
 .logo {
@@ -230,54 +279,29 @@ header nav ul li a {
   height: 150px;
 }
 
-.grid {
-  display: grid;
-  grid-template-areas: "header" "main" "footer";
-}
-.grid header {
-  grid-area: header;
-}
-.grid main {
-  grid-area: main;
-}
-.grid footer {
-  grid-area: footer;
+body {
+  margin: 0px;
 }
 
-@media screen and (max-width: 768px) {
-  header {
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 0%;
-  }
-  header nav {
-    padding: 0%;
-    margin-top: 0%;
-  }
-  header nav ul {
-    display: flex;
-  }
-  header nav ul li {
-    padding: 10px;
-    font-size: 15px;
-  }
-  .logo {
-    width: 100px;
-    height: 100px;
-    padding-top: 5px;
-  }
-  .gridMainNosotros {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: repeat(3, auto);
-  }
+.grid {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(3, auto);
 }
-.objetivoimg {
-  width: 150px;
+
+.foto {
+  width: 256px;
   height: auto;
-  padding-left: 0px;
-  margin: 20px;
+  justify-content: center;
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+}
+
+.objetivoimg {
+  width: 250px;
+  height: auto;
+  justify-content: center;
 }
 
 .tituloNosotros {
@@ -286,20 +310,20 @@ header nav ul li a {
   font-size: 30px;
 }
 
-.foto {
-  width: 256px;
-  height: auto;
-  padding-left: 90px;
-  margin-left: 90px;
-}
-
 .textoHistoria {
   font-family: "Handlee", cursive;
   font-weight: bolder;
-  color: rgb(228, 21, 6);
+  color: rgb(35, 35, 35);
   text-align: center;
-  border-style: groove;
-  border-right-color: #789090;
+  padding: 30px;
+}
+
+.objetivotexto {
+  font-family: "Handlee", cursive;
+  font-weight: bolder;
+  color: rgb(35, 35, 35);
+  text-align: center;
+  padding-top: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */
